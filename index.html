@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Indirect Pong</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 body {
@@ -50,26 +50,35 @@ p {
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<div id="author">by: TODO Your Name (TODO your andrewid)</div>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Indirect Pong</h1>
+<div id="author">by: Kai Kuehner (kkuehner)</div>
+<p>Pong, but you shoot the ball instead of hitting it with a paddle.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
-<!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
 <img src="game.png" />
 </div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+<p>Each player controls a turret that they can rotate and shoot. The goal is to 
+shoot the puck so it bounces onto the other player's side of the screen.</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
-<!-- TODO: illustrate your descriptions with more drawings -->
+<p>Each player controls a turret on one side of the screen. They can rotate the turret with the arrow keys and shoot a bullet with the spacebar. 
+Bullets can only be fired once a second.</p>
+<p>A large puck bounces around the screen, reflecting off the top and bottom. If a bullet hits the puck, the bullet 
+disappears and the puck bounces away from the point of collision. Each player's 
+goal is to bounce the puck into the other player's edge of the screen. When this 
+happens, they receive a point and the puck respawns in the center then moves 
+toward a random side. The first player to 5 points wins, and a &quot;YOU WIN&quot; or &quot;YOU 
+LOSE&quot; message is shown to each player.</p>
+
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="win.png" />
+<img src="lose.png" />
 </div>
 
 <h2>Assets</h2>
-<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+<div class="figure"><img src="assets.jpg" /></div>
+<p>The 
+<a href="http://graphics.cs.cmu.edu/courses/15-466-f18/game0-designs/default/stickochet.blend">Stickochet assets</a> could be used for some or all of this game's art.</p>
 
 </body>
 </html>
